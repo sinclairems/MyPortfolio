@@ -1,0 +1,27 @@
+/* Project Grid Layout */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  grid-gap: 20px;
+}
+
+/* Project Styles */
+.project {
+  background-color: white; /* Or a light background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.profile-image {
+  width: 200px; /* Adjust the size as needed */
+  height: 200px;
+  border-radius: 50%; /* For a circular image */
+  object-fit: cover; /* To make the image fit within the circle */
+}
