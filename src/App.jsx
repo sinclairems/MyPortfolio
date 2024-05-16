@@ -1,8 +1,23 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Portfolio from "./components/Project";
+import Portfolio from "./components/Portfolio";
 import profileImage from "./assets/profilemoji.jpg" 
+
+const projectData = [
+  {
+    title: "Project 1",
+    image: "./assets/project1.png",
+    deployedLink: "https://deployed-project1.com",
+    githubLink: "https://github.com/your-username/project1-repo",
+  },
+  {
+    title: "Project 2",
+    image: "./assets/project2.png",
+    deployedLink: "https://deployed-project2.com",
+    githubLink: "https://github.com/your-username/project2-repo",
+  },
+];
 
 function About() {
   return (
@@ -14,15 +29,6 @@ function About() {
         bootcamp. Coming soon, there will be more projects to see, so stay
         tuned!
       </p>
-    </section>
-  );
-}
-
-function Project() {
-  return (
-    <section>
-      <h2>Projects</h2>
-      <p>Check out my projects!</p>
     </section>
   );
 }
@@ -52,8 +58,8 @@ function App() {
         <Route path="/" element={<About />} />
         <Route
           path="/portfolio"
-          element={<Portfolio/>}
-        />{" "}
+          element={<Portfolio projectData={projectData} />}
+        />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
