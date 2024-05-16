@@ -1,5 +1,3 @@
-import React from "react";
-
 function Portfolio({ title, image, deployedLink, githubLink }) {
   const projectData = [
     {
@@ -14,7 +12,6 @@ function Portfolio({ title, image, deployedLink, githubLink }) {
       deployedLink: "https://deployed-project2.com",
       githubLink: "https://github.com/your-username/project2-repo",
     },
-    // Add more project objects as needed
   ];
   
   return (
