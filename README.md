@@ -8,6 +8,7 @@ My portfolio still needs some work! It is very basic and I couldn't get my proje
 Here's what you're missing: 
 ![screenshot1](./screenshots/screenshot1.png)
 ![screenshot2](./screenshots/screenshot2.png)
+![screenshot3](./screenshots/screenshot3.png)
 
 ## Technologies Used
 - React
